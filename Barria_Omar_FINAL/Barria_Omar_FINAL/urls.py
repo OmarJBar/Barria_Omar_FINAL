@@ -20,7 +20,8 @@ from barria_mobile_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.inscrito_list),
+    path('', views.index),
+    path('inscrito_list/', views.inscrito_list),
     path('inscrito_detalle/<int:id>', views.inscrito_detalle),
     path('inscrito_class', views.inscrito_list_class.as_view())
 ]
